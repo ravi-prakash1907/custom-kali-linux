@@ -14,8 +14,25 @@ LABEL org.opencontainers.image.licenses=GPL
 # going root for installation
 USER root
 
-## updating
-RUN apt-get update
+# installing metaverse
+RUN apt-get update \
+  && apt-get install -y Node.js \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN apt-get update \
+  && apt install -y npm \
+  && rm -rf /var/lib/apt/lists/*
+
+## comes pre-exposed from base
+# SERVICE:  EXPOSED PORT | default
+# SSH_PORT: 20022 | 22
+# RDP_PORT: 13389 | 3389
+# VNC_PORT: 5908 | 5900
+
+# change user
+USER trustworthy
+# set working directory
+WORKDIR /home/trustworthy
 
 # start
 RUN service apache2 start
