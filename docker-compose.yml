@@ -1,0 +1,12 @@
+version: '3.0'
+
+services:
+  app:
+    build: .
+    ports: 
+      - 8888:8888
+    volumes:
+      - ./src/:/home/jovyan/bkp
+    restart: unless-stopped
+  mcr:
+    image: raviprakash1907/modern-crypto:latest

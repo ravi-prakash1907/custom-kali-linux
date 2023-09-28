@@ -1,0 +1,38 @@
+name: Docker Image for GitHub packages
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Updates
+      uses: actions/checkout@v3
+
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --build-arg GET_CACHED_MOD=false --tag modern-crypto:$(date +%s) --tag modern-crypto:latest
+
+    ##  FOLLOWING IS NOT POSSIBLE IN GITHUB GHCR for now, check later for fix
+    #steps:
+    #  - name: Updates Checkout
+    #    uses: actions/checkout@v3
+
+    #  - name: Login to Docker Hub
+    #    uses: docker/login-action@v2
+    #    with:
+    #      registry: ghcr.io
+    #      username: ravi-prakash1907
+    #      password: ${{ secrets.CR_PAT }}
+
+    #  - name: Build and Push the Docker Image
+    #    uses: docker/build-push-action@v4
+    #    with:
+    #      push: true
+    #      tags: ghcr.io/${{ github.repository }}/modern-crypto:latest
