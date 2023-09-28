@@ -28,4 +28,4 @@ jobs:
       uses: docker/build-push-action@v4
       with:
         push: true
-        tags: ${{ secrets.DOCKER_USERNAME }}/modern-crypto:latest
+        tags: ${{ secrets.DOCKER_USERNAME }}/custom-kali-linux:meta

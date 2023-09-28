@@ -1,14 +1,14 @@
 ###########################################
-###      Latest Version - v14.1.0       ###
+###      Latest Version - META       ###
 ###########################################
 
-# pulling image of base-notebook
-FROM jupyter/base-notebook
+# pulling image of base-custom-kali-linux
+FROM raviprakash1907/custom-kali-linux:meta
 
 # author
 LABEL Ravi Prakash <raviprakash.cf>
-LABEL org.opencontainers.image.source=https://github.com/ravi-prakash1907/modern-crypto
-LABEL org.opencontainers.image.description="A docker image for hands-on cryptography with jupyter notebook."
+LABEL org.opencontainers.image.source=https://github.com/ravi-prakash1907/custom-kali-meta
+LABEL org.opencontainers.image.description="A collection of customized images of Kali Linux."
 LABEL org.opencontainers.image.licenses=GPL
 
 # going root for installation
@@ -17,26 +17,6 @@ USER root
 ## updating
 RUN apt-get update
 
-## installing wget, zip, and unzip 
-RUN apt-get install -y wget zip unzip build-essential \
-  && apt-get install -y python3 python3-pip \
-  && rm -rf /var/lib/apt/lists/*
-
-## setting arg to download updated library | false means overwrite cache
-ARG GET_CACHED_MOD=false
-## installing the modernCrypto library
-RUN wget https://ravi-prakash1907.github.io/Modern-Cryptography/pkgs/modernCrypto_latest.zip \
-  && unzip modernCrypto_latest.zip -d /home/jovyan \
-  && rm modernCrypto_latest.zip \
-  && rm -rf /home/jovyan/work
-
-## importing local code
-WORKDIR /home/jovyan
-COPY ./src .
-
-# changing user to "$NB_USER" to run the image with non-root user by default
-USER $NB_UID
-
-## start notebook 
-# custom parameter to install jupyter lab for ease while running the container with the option -e
-ENV JUPYTER_ENABLE_LAB=yes
+# start
+RUN service apache2 start
+RUN /bin/sh

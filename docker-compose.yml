@@ -1,12 +1,16 @@
-version: '3.0'
+version: "3.0"
 
 services:
-  app:
+  kali:
     build: .
+    container_name: custom-kali-meta:tag
     ports: 
-      - 8888:8888
+      - 13389:13389
+      - 20022:20022
+      - 5908:5908
+      - 55510:80 
     volumes:
-      - ./src/:/home/jovyan/bkp
-    restart: unless-stopped
-  mcr:
-    image: raviprakash1907/modern-crypto:latest
+      - ./kali/:/home/trustworthy
+    command: /bin/sh
+  meta:
+    image: raviprakash1907/custom-kali-linux:meta
