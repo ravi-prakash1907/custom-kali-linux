@@ -1,8 +1,8 @@
-# `custom-kali-meta` 💀
+# `custom-kali-linux` 💀
 
 ![Docker Pulls](https://img.shields.io/docker/pulls/raviprakash1907/custom-kali-linux) [![Build and Push to dockerhub](https://github.com/ravi-prakash1907/custom-kali-meta/actions/workflows/dockerhub-image.yml/badge.svg)](https://github.com/ravi-prakash1907/custom-kali-meta/actions/workflows/dockerhub-image.yml)  
 
-`custom-kali-meta` is one of the four varients of `custom-kali-linux`, i.e., a collection of customized Kali Linux images for various use cases. These all images are available on docke-hub at [https://hub.docker.com/r/raviprakash1907/custom-kali-linux](https://hub.docker.com/r/raviprakash1907/custom-kali-linux). These images are based on [`kalilinux/kali-rolling`](https://hub.docker.com/r/kalilinux/kali-rolling), but they differ in terms of the packages used during the build process. There are two main packages used:
+`custom-kali-linux` is a collection of customized Kali Linux images for various use cases. These all images are available on docke-hub at [https://hub.docker.com/r/raviprakash1907/custom-kali-linux](https://hub.docker.com/r/raviprakash1907/custom-kali-linux). These images are based on [`kalilinux/kali-rolling`](https://hub.docker.com/r/kalilinux/kali-rolling), but they differ in terms of the packages used during the build process. There are two main packages used:
 
 1. `kali-desktop-core` 🖥️
 2. `kali-linux-default` 🛡️
