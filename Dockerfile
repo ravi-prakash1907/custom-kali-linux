@@ -7,7 +7,7 @@ FROM raviprakash1907/custom-kali-linux:meta
 
 # author
 LABEL Ravi Prakash <raviprakash.cf>
-LABEL org.opencontainers.image.source=https://github.com/ravi-prakash1907/custom-kali-meta
+LABEL org.opencontainers.image.source=https://github.com/ravi-prakash1907/custom-kali-linux
 LABEL org.opencontainers.image.description="A collection of customized images of Kali Linux."
 LABEL org.opencontainers.image.licenses=GPL
 
