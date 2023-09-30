@@ -35,5 +35,4 @@ USER trustworthy
 WORKDIR /home/trustworthy
 
 # start
-RUN service apache2 start
 RUN /bin/sh
