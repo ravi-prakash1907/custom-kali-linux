@@ -3,7 +3,7 @@
 ###########################################
 
 # pulling image of base-custom-kali-linux
-FROM raviprakash1907/custom-kali-linux:dafault
+FROM raviprakash1907/custom-kali-linux:default
 
 # author
 LABEL Ravi Prakash <raviprakash.cf>
