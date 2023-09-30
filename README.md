@@ -1,6 +1,6 @@
 # `custom-kali-linux:default` 💀
 
-![Docker Pulls](https://img.shields.io/docker/pulls/raviprakash1907/custom-kali-linux) [![Build and Push to dockerhub](https://github.com/ravi-prakash1907/custom-kali-meta/actions/workflows/dockerhub-image.yml/badge.svg)](https://github.com/ravi-prakash1907/custom-kali-meta/actions/workflows/dockerhub-image.yml)  
+![Docker Pulls](https://img.shields.io/docker/pulls/raviprakash1907/custom-kali-linux) [![Build and Push to dockerhub](https://github.com/ravi-prakash1907/custom-kali-meta/actions/workflows/dockerhub-image.yml/badge.svg)](https://github.com/ravi-prakash1907/custom-kali-meta/actions/workflows/dockerhub-image-default.yml)  
 
 `custom-kali-linux:default` is a custom Kali Linux image built with docker, based on the `kali-linux-default` package.  
 
