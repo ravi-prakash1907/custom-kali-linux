@@ -13,6 +13,8 @@ LABEL org.opencontainers.image.licenses=GPL
 
 # going root for installation
 USER root
+# root's password  (default password is 'toor')
+RUN echo "root:toor" | chpasswd
 
 # installing metaverse
 RUN apt-get update \
