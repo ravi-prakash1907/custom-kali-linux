@@ -2,9 +2,9 @@ name: Docker Image (default) for Dockerhub
 
 on:
   push:
-    branches: [ "default" ]
+    branches: [ "default/tag" ]
   pull_request:
-    branches: [ "default" ]
+    branches: [ "default/tag" ]
   schedule:
     - cron: "0 0 1 1/3 *"
 
