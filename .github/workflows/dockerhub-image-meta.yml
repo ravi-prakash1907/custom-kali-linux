@@ -1,10 +1,10 @@
-name: Docker Image for Dockerhub
+name: Docker Image (meta) for Dockerhub
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "meta/tag" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "meta/tag" ]
   schedule:
     - cron: "0 0 1 1/3 *"
 
