@@ -1,6 +1,0 @@
-title: custom-kali-meta
-description: A Docker Image for Custom Kali Linux based on kalilinux/kali-rolling
-show_downloads: false
-theme: jekyll-theme-cayman
-github:
-  another_url: https://raviprakash.cf/
