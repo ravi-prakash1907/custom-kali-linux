@@ -5,6 +5,10 @@ on:
     branches: [ "meta/tag" ]
   pull_request:
     branches: [ "meta/tag" ]
+  push:
+    branches: [ "default/tag" ]
+  pull_request:
+    branches: [ "default/tag" ]
   schedule:
     - cron: "0 0 1 1/3 *"
 
