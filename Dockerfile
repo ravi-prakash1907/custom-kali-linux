@@ -57,8 +57,9 @@ RUN apt-get update \
   rainbowcrack \
   && rm -rf /var/lib/apt/lists/*
 
-# env variables
+# env variables and port exposing
 ENV PATH /usr/local/go/bin/:$PATH
+EXPOSE 20022 13389 5908 19070 19075
 
 # change user
 USER trustworthy
