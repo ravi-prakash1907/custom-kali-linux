@@ -1,4 +1,4 @@
-name: Docker Image for Dockerhub
+name: custom-kali-linux:latest
 
 on:
   push:
