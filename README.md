@@ -1,6 +1,6 @@
 # `custom-kali-linux:meta` 💀
 
-![Docker Pulls](https://img.shields.io/docker/pulls/raviprakash1907/custom-kali-linux) [![Build and Push to dockerhub](https://github.com/ravi-prakash1907/custom-kali-linux/actions/workflows/dockerhub-image.yml/badge.svg)](https://github.com/ravi-prakash1907/custom-kali-linux/actions/workflows/dockerhub-image-meta.yml)  
+![Docker Pulls](https://img.shields.io/docker/pulls/raviprakash1907/custom-kali-linux) [![Build and Push to dockerhub](https://github.com/ravi-prakash1907/custom-kali-linux/actions/workflows/dockerhub-image-meta.yml/badge.svg)](https://github.com/ravi-prakash1907/custom-kali-linux/actions/workflows/dockerhub-image-meta.yml)  
 
 `custom-kali-linux:meta` is a custom Kali Linux image built with docker with the `kali-linux-default` package. The base image used to build this version is `custom-kali-linux:default`. This Image consists of some additional utilities for XR development. 
 
