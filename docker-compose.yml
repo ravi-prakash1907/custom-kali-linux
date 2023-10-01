@@ -3,7 +3,7 @@ version: "3.0"
 services:
   kali:
     build: .
-    container_name: custom-kali-meta:tag
+    container_name: custom-kali-latest
     ports: 
       - 13389:13389
       - 20022:20022
@@ -13,4 +13,4 @@ services:
       - ./kali/:/home/trustworthy
     command: /bin/sh
   meta:
-    image: raviprakash1907/custom-kali-linux:meta
+    image: raviprakash1907/custom-kali-linux:latest

@@ -6,7 +6,7 @@
 # docker run \
 #     -it \
 #     --rm \
-#     --name custom-kali:<tag> \
+#     --name custom-kali \
 #     -p 20020:20022 -p 13389:13389 -p 5908:5908 \
 #     -p 19070:80 -p 19075:443 \
 #     kali:<tag>
