@@ -1,9 +1,9 @@
 ###########################################
-###      Latest Version - META       ###
+###     Latest Version - META-lite      ###
 ###########################################
 
 # pulling image of base-custom-kali-linux
-FROM raviprakash1907/custom-kali-linux:default
+FROM raviprakash1907/custom-kali-linux:core
 
 # author
 LABEL Ravi Prakash <raviprakash.cf>
@@ -31,8 +31,6 @@ RUN apt-get update \
 # RDP_PORT: 13389 | 3389
 # VNC_PORT: 5908 | 5900
 
-# change user
-USER trustworthy
 # set working directory
 WORKDIR /home/trustworthy
 
