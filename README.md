@@ -12,7 +12,7 @@ For more information about the different Kali Linux packages, please visit the [
 
 ### Tags 🏷️
 
-All images in this repository provide access to the server via **RDP** (port 13389) 🖥️, **VNC** (port 5908) 🖥️, and **SSH** (port 20022) 🔐. The repository offers three main tags:
+All images in this repository provide access to the server via **RDP** (port 13389) 🖥️, **VNC** (port 5908) 🖥️, and **SSH** (port 20022) 🔐. The repository offers four main tags:
 
 1. **`core`:** These images are built with the `kali-linux-core` package and have minimal dependencies (related to text editing and version control). They provide lightweight instances and correspond to the Long Term Support (LTS) version of `custom-kali-linux`. Updates are less frequent. 🌱
 
