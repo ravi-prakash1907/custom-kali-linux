@@ -52,29 +52,7 @@ $ docker run \
 > Password: `trustworthy`  
 
 > User: `root`  
-> Password: **To be set**  
-
-### Setting the root user's password:
-
-1. Switch to the `root` user with the following command:
-
-```sh
-$ sudo su
-```
-
-2. Reset the `root` password:
-
-```sh
-$ passwd root
-```
-
-3. You'll be prompted to set a new password.
-
-Now, you can switch between users (`root` and `trustworthy`) using:
-
-```sh
-$ su <username>
-```
+> Password: `toor`  
 
 ---
 
@@ -83,7 +61,7 @@ $ su <username>
 Here, we provide a sample `Dockerfile` used to build the image:
 
 ```Dockerfile
-FROM raviprakash1907/custom-kali-linux:meta
+FROM raviprakash1907/custom-kali-linux:<tag>
 
 # Switching to root for installation
 USER root
@@ -103,7 +81,7 @@ version: "3.0"
 services:
   kali:
     build: .
-    container_name: custom-kali-meta:<tag>
+    container_name: custom-kali-meta
     ports: 
       - 13389:13389
       - 20022:20022
